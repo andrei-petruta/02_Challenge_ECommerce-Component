@@ -105,7 +105,7 @@ ul li {
 }
 
 .color {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px 10px;
   margin-right: 7px;
 }
@@ -141,7 +141,7 @@ ul li {
 /* ******FLOATS****** */
 
 /* (825-8-250-80)=487/2=243.5 */
-.product-img {
+/* .product-img {
   float: left;
   margin-right: 25px;
 }
@@ -169,4 +169,36 @@ ul li {
 
 .product-description {
   clear: both;
+} */
+
+/* ******FLEXBOX****** */
+.presentation-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.price-container {
+  flex: 1;
+  margin-top: 25px;
+}
+
+.details-container {
+  flex: 1;
+  margin-top: 25px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shipping {
+  margin-bottom: 0;
+}
+
+.color-option {
+  display: flex;
+  gap: 10px;
 }
